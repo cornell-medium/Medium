@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo -e ‘sass is now watching your scss files’
-cd /Users/julianohta/Documents/_websites/resume
+cd Documents/_medium
 sass --watch scss:css
+echo -e ‘sass is now watching your scss files’;
