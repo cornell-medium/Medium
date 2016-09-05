@@ -1,7 +1,28 @@
+@font-face {
+    font-family: cooperhewitt;
+    font-weight: lighter;
+    src: url(../resources/CooperHewitt-Light.otf);
+}
+@font-face {
+    font-family: cooperhewitt;
+    font-weight: normal;
+    src: url(../resources/CooperHewitt-Medium.otf);
+}
+@font-face {
+    font-family: cooperhewitt;
+    font-weight: bold;
+    src: url(../resources/CooperHewitt-Semibold.otf);
+}
+
+$blue: #52D8D8;
+$pink: #ED1E79; 
+
 *, *:before, *:after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    font-family: cooperhewitt;
 }
 
 header {
@@ -18,7 +39,82 @@ header {
     width: auto;
 
     text-align: center;
-    
+}
+
+.font {
+    &__size-1 {
+        font-size: 0.85em;
+    }
+    &__size-2 {
+        font-size: 1.4em;
+    }
+    &__size-3 {
+        font-size: 3.5em;
+        font-weight: bold;
+    }
+
+    &__desc {
+       font-family: 'PT Serif', serif;
+       font-style: italic;
+    }
+
+    &__large-h {
+        line-height: 1.2;
+    }
+
+    &__link {
+        color: $blue;
+        text-decoration: none;
+    }
+    &__link:hover {
+        color: $blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    &__small-h {
+        padding-bottom: 12px;
+
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 3px;
+    }
+}
+
+
+
+main {
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.main {
+    &__container {
+        &--top {
+            height: 500px;
+            text-align: left;
+        }
+
+        &--mid {
+            background-color: black;
+            padding: 32px;
+            margin-top: 32px;
+        }
+
+        &--title {
+            height: auto;
+            width: 20%;
+        }
+        
+        &--text {
+            margin-top: 100px;
+            float: left;
+            width: 100%;
+            max-width: 400px;
+        }
+       
+    }
+
     &__graphics {
         height: 80vh;
         width: 80%;
@@ -34,28 +130,23 @@ header {
         position: absolute;
         display: inline-block;
         width: auto;
-        padding: 16px;
-        padding-right: 32px;
-        color: blue;
-        letter-spacing: 2px;
+        padding: 10px 8px 8px 16px;
+        letter-spacing: 5px;
         background-color: black;
         bottom: 50%;
         right: 0;
-    }
 
-    &__container {
-        &--title {
-            height: auto;
-            width: 20%;
+        &--front {
+            color: $blue;
+            margin-left: -2px;
+            margin-top: -31px;
+            z-index: 2;
         }
-        
-        &--text {
-            margin-top: 100px;
-            float: left;
-            width: 100%;
-            max-width: 400px;
+
+        &--back {
+            color: $pink;
+            z-index: 1;
         }
-       
     }
 
     &__spacer {
@@ -63,37 +154,9 @@ header {
         margin-bottom: 40px;
         height: 15px;
         width: 80px;
-        background-color: red;
+        background-color: $pink;
     }
-}
 
-.font {
-    &__size-1 {
-        font-size: 1.25em;
-    }
-    &__size-2 {
-        font-size: 1.4em;
-    }
-    &__size-3 {
-        font-size: 3.5em;
-    }
-    
-    &__color-blue {
-        color: blue;
-    }
-}
-
-
-
-main {
-    height: auto;
-    width: 100%;
-    background-color: black;
-    padding: 32px;
-    text-align: center;
-}
-
-.main {
     &__quote {
         margin-top: 48px;
         color: white;
@@ -166,7 +229,7 @@ footer {
     height: auto;   
     width: 80%;
     max-width: 800px;
-    font-size: 1.25em;
+    font-size: 0.9em;
     
 
 
@@ -179,14 +242,9 @@ footer {
     }
 }
 
-.title {
-    width: auto;
-    font-size: 3em;
-    line-height: 60%;
-
-    &__anecdote {
-        font-size: 1.5em;
-    }
+#title {
+    width: 195px;
+    height: auto;
 }
 
 
