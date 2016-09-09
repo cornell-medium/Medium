@@ -60,7 +60,7 @@ main {
   text-align: left; }
 .main__container--mid {
   background-color: black;
-  padding: 32px;
+  padding: 22px 32px 58px 32px;
   margin-top: 32px; }
 .main__container--title {
   height: auto;
@@ -104,30 +104,49 @@ main {
 .main__quote {
   margin-top: 48px;
   color: white;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  text-transform: uppercase; }
   .main__quote--credits {
     color: white;
     font-size: 1.5em; }
+.main__button:before {
+  content: '';
+  border: 4px solid #52D8D8;
+  margin-top: -8px;
+  margin-left: -35px;
+  width: 205px;
+  height: 71px;
+  position: absolute; }
+.main__button:hover:before {
+  cursor: pointer; }
 .main__button {
-  padding: 4px;
+  padding: 11px 40px 0px 40px;
   margin-top: 48px;
-  border-style: solid;
-  border-width: 4px;
-  border-color: red;
-  font-size: 2.5em;
-  color: white;
-  display: inline-block; }
+  border: 4px solid #ED1E79;
+  font-size: 2.2em;
+  color: #ED1E79;
+  display: inline-block;
+  transition: ease-in-out .1s; }
+.main__button:hover {
+  background: #ED1E79;
+  color: #52D8D8;
+  cursor: pointer; }
 
 footer {
   height: 100px;
   width: 100%;
   background-color: white;
-  padding: 16px; }
+  padding: 30px 16px 16px 16px; }
 
 .footer__title {
   text-align: center;
-  font-size: 2em;
-  font-weight: bold; }
+  font-size: 2em; }
+  .footer__title--highlight {
+    padding-bottom: -2px;
+    border-bottom: 5px solid #ED1E79; }
+  .footer__title--main {
+    padding: 0px 40px 6px 40px;
+    border-bottom: 7px solid #52D8D8; }
 .footer__spacer {
   width: 200px;
   height: 30px;
