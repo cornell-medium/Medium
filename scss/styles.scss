@@ -246,10 +246,11 @@ footer {
         flex-direction: row;
     }
     &__image {
-        height: 150px;
-        width: 150px;
-        background-color: black;
+        display: block;
+        height: auto;
+        width: 110px;
         margin: auto;
+        padding-bottom: 20px;
     }
 
 }
@@ -288,6 +289,9 @@ footer {
     }
 }
 
+#particles-js {
+    opacity: 0.8;
+}
 #title {
     width: 195px;
     height: auto;

@@ -165,10 +165,11 @@ footer {
   display: flex;
   flex-direction: row; }
 .footer__image {
-  height: 150px;
-  width: 150px;
-  background-color: black;
-  margin: auto; }
+  display: block;
+  height: auto;
+  width: 110px;
+  margin: auto;
+  padding-bottom: 20px; }
 
 .menu {
   margin-top: 30px;
@@ -187,6 +188,9 @@ footer {
   .menu__item:hover {
     border: 3px solid #ED1E79;
     cursor: pointer; }
+
+#particles-js {
+  opacity: 0.8; }
 
 #title {
   width: 195px;
