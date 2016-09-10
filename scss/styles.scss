@@ -124,6 +124,12 @@ main {
         margin-top: 10px;
         right: 0;
         background-color: #F8F8F8;
+
+        &--content {
+            margin-top: 40px;
+            margin-left: 110px;
+            opacity: 0.35;
+        }
     }
 
     &__graphics-caption {
@@ -193,7 +199,7 @@ main {
     }
     &__button:hover {
         background: $pink;
-        color: $blue;
+        color: #000000;
         cursor: pointer;
     }
 }
@@ -252,11 +258,11 @@ footer {
 
 .menu {
     margin-top: 30px;
-    display: flex;
-    float: right;
+    // display: flex;
+    // float: right;
     height: auto;   
-    width: 80%;
-    max-width: 800px;
+    // width: 80%;
+    // max-width: 800px;
     font-size: 0.9em;
     
 
@@ -265,8 +271,20 @@ footer {
     justify-content: center;
 
     &__item {
-        width: 25%;
+        border-width: 3px;
+        border-color: transparent;
+        border-style: solid;
+
+        padding-bottom: 8px;
+        padding-top: 11px;
         text-align: center;
+
+        transition: ease-in-out .1s;
+    }
+
+    &__item:hover {
+        border: 3px solid $pink;
+        cursor: pointer;
     }
 }
 

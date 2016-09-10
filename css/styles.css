@@ -78,6 +78,10 @@ main {
   margin-top: 10px;
   right: 0;
   background-color: #F8F8F8; }
+  .main__graphics--content {
+    margin-top: 40px;
+    margin-left: 110px;
+    opacity: 0.35; }
 .main__graphics-caption {
   position: absolute;
   display: inline-block;
@@ -129,7 +133,7 @@ main {
   transition: ease-in-out .1s; }
 .main__button:hover {
   background: #ED1E79;
-  color: #52D8D8;
+  color: #000000;
   cursor: pointer; }
 
 footer {
@@ -168,17 +172,21 @@ footer {
 
 .menu {
   margin-top: 30px;
-  display: flex;
-  float: right;
   height: auto;
-  width: 80%;
-  max-width: 800px;
   font-size: 0.9em;
   flex-direction: row;
   justify-content: center; }
   .menu__item {
-    width: 25%;
-    text-align: center; }
+    border-width: 3px;
+    border-color: transparent;
+    border-style: solid;
+    padding-bottom: 8px;
+    padding-top: 11px;
+    text-align: center;
+    transition: ease-in-out .1s; }
+  .menu__item:hover {
+    border: 3px solid #ED1E79;
+    cursor: pointer; }
 
 #title {
   width: 195px;
