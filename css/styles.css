@@ -72,7 +72,7 @@ main {
   max-width: 400px; }
 .main__graphics {
   height: 80vh;
-  width: 75%;
+  width: 65%;
   z-index: -1;
   position: absolute;
   margin-top: 10px;
